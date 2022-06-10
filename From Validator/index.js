@@ -18,7 +18,6 @@ function showSuccess(input){
     formControl.className = 'form-control success'
 }
 
-
 function checkEmail(input){
     const re=  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -28,9 +27,6 @@ function checkEmail(input){
         showError(input, 'Email is invalid')
     }
 }
-
-
-
 
 function getFieldName(input){
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
