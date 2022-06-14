@@ -1,0 +1,18 @@
+/*
+Bind allows us to easily set which specific object will be bound to this when a function or method is invoked.
+
+
+
+
+
+FINISH BIND
+
+
+
+
+
+
+
+
+
+*/
