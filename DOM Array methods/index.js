@@ -83,8 +83,6 @@ function updateDom(providedData = data){
         element.innerHTML = `<strong>${user.name}</strong> ${formatMoney(user.money)}`
         main.appendChild(element)
     })
-
-
 }
 
 
