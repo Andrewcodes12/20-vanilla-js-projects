@@ -153,8 +153,6 @@ let hamster = {
     stomach: [],
 
     eat(food){
-        // we can also do this
-        // this.stomach = [food]
         this.stomach.push(food)
     }
 }
