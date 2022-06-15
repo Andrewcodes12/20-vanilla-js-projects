@@ -10,6 +10,14 @@ instead of having a single next node; it might have more than 1 child node
 A graph is a collection of nodes and any edges between those nodes.
 
 
+
+tree - graph with no cycles
+binary tree - tree where nodes have at most 2 nodes
+root - the ultimate parent, the single node of a tree that can access every other node through edges; by definition the root will not have a parent
+internal node - a node that has children
+leaf - a node that does not have any children
+path - a series of nodes that can be traveled through edges - for example A, B, E is a path through the above tree
+
 -----------------------------------------------------------------------------
 What is a tree?
 A tree if a graph that does not contain any cycles.
