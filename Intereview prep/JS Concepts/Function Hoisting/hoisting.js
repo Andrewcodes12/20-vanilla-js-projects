@@ -1,0 +1,10 @@
+/*
+Hoisting is when variables and functions are moved to the top of their scope before execution
+
+
+
+
+
+
+
+*/
