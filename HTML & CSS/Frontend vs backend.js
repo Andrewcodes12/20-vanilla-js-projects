@@ -16,5 +16,12 @@ dynamic website
 must use backend language to communicate to the database
 backend set up with database
 
+front-end languages
+HTML - repsonsible for content of the page; text, images,buttons
+CSS - responsible for the styling of the page; the presentation and the way the elements are laid out
+Javascript - allows us to add dynamic effects manipulates content from html and loads data from servers
+
+
+
 
 */
