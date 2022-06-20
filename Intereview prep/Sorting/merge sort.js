@@ -33,7 +33,7 @@ const mergeInsertionSort = arr => {
     }
 
     return merge(leftSorted, rightSorted);
-  }
+}
 
   const merge = (arrA, arrB) => {
     const returnArr = [];
