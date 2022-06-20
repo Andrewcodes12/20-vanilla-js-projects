@@ -13,7 +13,7 @@ const mergeSort = arr => {
     return merge(leftSorted, rightSorted);
   }
 
-  const mergeInsertionSort = arr => {
+const mergeInsertionSort = arr => {
     if (arr.length <= 1) return arr;
 
     let midpoint = Math.min(arr.length /  2);
