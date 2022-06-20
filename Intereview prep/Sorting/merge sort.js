@@ -35,7 +35,7 @@ const mergeInsertionSort = arr => {
     return merge(leftSorted, rightSorted);
 }
 
-  const merge = (arrA, arrB) => {
+const merge = (arrA, arrB) => {
     const returnArr = [];
 
     let indexA = 0;
@@ -58,7 +58,7 @@ const mergeInsertionSort = arr => {
     }
 
     return returnArr;
-  }
+}
 
   const insertionSort = (arr) => {
     for (let i = 1; i < arr.length - 1; i++) {
