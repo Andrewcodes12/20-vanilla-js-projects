@@ -60,7 +60,7 @@ const merge = (arrA, arrB) => {
     return returnArr;
 }
 
-  const insertionSort = (arr) => {
+const insertionSort = (arr) => {
     for (let i = 1; i < arr.length - 1; i++) {
       let val = arr[i];
 
@@ -74,7 +74,7 @@ const merge = (arrA, arrB) => {
       arr[j + 1] = val;
     }
     return arr;
-  }
+}
 
   const arr1 = [];
   const arr2 = [];
