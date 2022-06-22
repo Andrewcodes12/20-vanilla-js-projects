@@ -12,7 +12,12 @@ insert at end - O(1)
 remove - O(n)
 remove from back - O(1)
 
+------------------------------------------------------------------------
+Things to look out for in interviews
 
+Clarify if there are duplicate values in the array. Would the presence of duplicate values affect the answer?
+Does it make the question simpler or harder?
+When using an index to iterate through array elements, be careful not to go out of bounds.
 Be mindful about slicing or concatenating arrays in your code.
 Typically, slicing and concatenating arrays would take O(n) time.
 Use start and end indices to demarcate a subarray/range where possible.
