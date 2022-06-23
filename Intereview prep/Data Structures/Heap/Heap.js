@@ -8,8 +8,11 @@ In a heap the root will be the MAX heap or the MIN heap.
 In a heap, the children of a node must be less than or equal to the parent node
 
         42
-        
-
+       /  \
+      32   24
+    /   \  /  \
+    30   9 20  18
+    
 
 --------------------------------------------------------------------------------------
 A heap is a specialized tree-based structure which is a complete tree
