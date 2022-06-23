@@ -17,14 +17,14 @@ Always use the worst case
 
 Big-O simplified
 
-T(5*n^2) = O(n2)
+T(5 n^2) = O(n^2)
 T(1000000 * n) = O(n)
 T(42 n log(n)) = O(n log(n))
 T(12) = O(1)
 
 
 T(n^3 + n^2 + n) = O(n^3)
-T (log(n) + 2^n) = O(n^2)
+T (log(n) + 2^n) = O(2^n)
 T(n + log(n)) = O(n)
 T(n! + 10n) = O(n!)
 
