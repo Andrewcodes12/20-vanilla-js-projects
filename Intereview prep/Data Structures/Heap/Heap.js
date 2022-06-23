@@ -48,6 +48,15 @@ balanced but not complete
       32   24
     /   \    \
    30   9     18
+--------------------------------------------------------------------------------------
+When to use heaps
+great for when a problem asks you to partially sort data.
+
+usually problems that have us calculate the largest or smallest n numbers of a collection.
+
+What if you were asked to find the largest 5 numbers in an array in linear time, O(n)? The fastest sorting algorithms
+are O(nlogn), so none of those algorithms will be good enough.
+However, we can use a heap to solve this problem in linear time.
 
 
 
