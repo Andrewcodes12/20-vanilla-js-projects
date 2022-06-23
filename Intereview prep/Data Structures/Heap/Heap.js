@@ -1,4 +1,17 @@
 /*
+A binary heap is a type of binary tree.
+A heap is NOT a binary search tree
+A heap is a patrially ordered Data Structure, whereas a BST is has a full order.
+
+In a heap the root will be the MAX heap or the MIN heap.
+
+In a heap, the children of a node must be less than or equal to the parent node
+
+        42
+        
+
+
+--------------------------------------------------------------------------------------
 A heap is a specialized tree-based structure which is a complete tree
 
 Max-Heap - in a max heap the value of a node must be greatest among the node values
