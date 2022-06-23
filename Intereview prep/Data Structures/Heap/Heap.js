@@ -22,8 +22,8 @@ all children are less than or equal to the parent node
 
 There is no guaranteed order among "siblings" in a heap.
 
-In a max heap a node(root) will be greater than all of its children, grandchildren, and so on.
-In a min heap a node(root) will be less than all of its children,grandchildren, and so on.
+In a max heap a node will be greater than all of its children, grandchildren, and so on.
+In a min heap a node will be less than all of its children,grandchildren, and so on.
 --------------------------------------------------------------------------------------
 Complete trees
 
