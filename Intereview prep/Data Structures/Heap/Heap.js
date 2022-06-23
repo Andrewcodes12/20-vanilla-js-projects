@@ -24,6 +24,32 @@ There is no guaranteed order among "siblings" in a heap.
 
 In a max heap a node(root) will be greater than all of its children, grandchildren, and so on.
 In a min heap a node(root) will be less than all of its children,grandchildren, and so on.
+--------------------------------------------------------------------------------------
+Complete trees
+
+every complete tree is a balanced tree
+not every balanced tree is a complete tree
+
+complete
+
+        42
+       /  \
+      32   24
+    /   \  /  \
+   30   9 20  18
+   /\
+   2 7
+
+balanced but not complete
+
+
+        42
+       /  \
+      32   24
+    /   \    \
+   30   9     18
+
+
 
 
 --------------------------------------------------------------------------------------
