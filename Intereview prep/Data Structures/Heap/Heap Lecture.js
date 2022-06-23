@@ -9,3 +9,14 @@
 // 32 42 24
 
 // Max heap- a node will always be greater than its children
+
+
+/*
+Heaps are partially sorted
+only thing we know with heaps is the root is the greatest node(max) or least node(min)
+
+
+
+
+
+*/
