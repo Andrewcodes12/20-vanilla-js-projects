@@ -3,7 +3,6 @@ browser sends request to server
 server sends response to browser(a response contains all the files the site is made of)
 
 
-
 front-end development
 the code that is displayed in the browser
 
