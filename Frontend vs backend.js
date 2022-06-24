@@ -23,5 +23,4 @@ Javascript - allows us to add dynamic effects manipulates content from html and 
 
 
 
-
 */
