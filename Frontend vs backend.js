@@ -4,7 +4,6 @@ server sends response to browser(a response contains all the files the site is m
 
 
 
-
 front-end development
 the code that is displayed in the browser
 
