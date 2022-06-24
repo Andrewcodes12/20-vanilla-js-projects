@@ -20,5 +20,4 @@ CSS - responsible for the styling of the page; the presentation and the way the 
 Javascript - allows us to add dynamic effects manipulates content from html and loads data from servers
 
 
-
 */
