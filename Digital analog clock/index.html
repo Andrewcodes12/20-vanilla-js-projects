@@ -13,30 +13,29 @@
             <div class="hr" id="hr"></div>
         </div>
             <div class="min" >
-                <div class="mn" id="min"></div>
+                <div class="mn" id="mn"></div>
             </div>
             <div class="sec" id="sec">
-                <div class="sc" id="sec"></div>
+                <div class="sc" id="sc"></div>
         </div>
     </div>
     <script>
-    const hr = document.getElementById('hr')
-const mn = document.getElementById('mn')
-const sc = document.getElementById('sc')
+    const hr = document.querySelector('#hr')
+    const mn = document.querySelector('#mn')
+    const sc = document.querySelector('#sc')
 
 
+    setInterval(()=> {
 
-setInterval(()=> {
+        let day = new Date()
+        let hours = day.getHours() * 30
+        let minutes = day.getMinutes() * 6
+        let seconds = day.getSeconds() * 6
 
-    let day = new Date()
-    let hours = day.getHours() * 30
-    let minutes = day.getMinutes() * 6
-    let seconds = day.getSeconds() * 6
-
-    hr.style.transform = `rotateZ(${hours+(minutes/12)}deg)`
-    mn.style.transform = `rotateZ(${minutes}deg)`
-    sc.style.transform = `rotateZ(${seconds}deg)`
-})
+        hr.style.transform = `rotateZ(${hours+(minutes/12)}deg)`
+        mn.style.transform = `rotateZ(${minutes}deg)`
+        sc.style.transform = `rotateZ(${seconds}deg)`
+    })
     </script>
 </body>
 </html>
