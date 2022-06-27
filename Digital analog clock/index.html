@@ -19,6 +19,24 @@
                 <div class="sc" id="sec"></div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script>
+    const hr = document.getElementById('hr')
+const mn = document.getElementById('mn')
+const sc = document.getElementById('sc')
+
+
+
+setInterval(()=> {
+
+    let day = new Date()
+    let hours = day.getHours() * 30
+    let minutes = day.getMinutes() * 6
+    let seconds = day.getSeconds() * 6
+
+    hr.style.transform = `rotateZ(${hours+(minutes/12)}deg)`
+    mn.style.transform = `rotateZ(${minutes}deg)`
+    sc.style.transform = `rotateZ(${seconds}deg)`
+})
+    </script>
 </body>
 </html>
