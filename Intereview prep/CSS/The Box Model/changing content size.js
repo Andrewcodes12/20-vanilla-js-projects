@@ -1,0 +1,4 @@
+/*
+use relative units for width because all devices have different widths
+
+*/

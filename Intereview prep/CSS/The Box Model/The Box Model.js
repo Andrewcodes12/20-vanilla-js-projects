@@ -45,6 +45,10 @@ display: inline is the default for elements(span,a,img)
 
 
 -------------------------------------------------------------------
+Standard box model vs border-box
+
+in the standard box model the width and height of an element set with CSS refers to the width and height of the box's content,
+any padding,border, and margin added to the element will get added to the size of the actual box.
 
 
 
