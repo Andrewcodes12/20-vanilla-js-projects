@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Div span class id</title>
+    </head>
+    <body>
+        <!-- divs are block level elements. will take up the width of whole page and push the next element down -->
+        <!-- spans are inline level elements. next element will be on the same line -->
+        <!-- semantic HTMl allows you to name the divs for their purpose -->
+        <!-- instead of main-header id we can replace div with <header> -->
+        <!-- instead of main-nav id we can replace the ul with <nav> -->
+
+        <!-- since everything is this div is the header; give it an id of header -->
+        <div id="main-header">
+            <h1>My Website</h1>
+            <p>A site about me</p>
+        </div>
+        <!-- since ul is a nav bar give it an id of nav -->
+            <ul id="main-nav">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+            <!-- about div so give it an id of about -->
+            <div id="about">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet <span class="span">consectetur adipisicing elit.</span> Commodi quod non modi, repellat maiores doloremque voluptate iure incidunt ratione atque nisi nemo. Dignissimos vitae dolor alias corrupti reprehenderit sed libero.</p>
+            </div>
+            <!-- contact div so give it an id of contact -->
+            <div id="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Addy</li>
+                    <li>phone</li>
+                    <li>email</li>
+                </ul>
+            </div>
+
+            <!-- footer div so give it an id of footer -->
+            <div id="footer">
+                <p>Copyright me</p>
+            </div>
+    </body>
+</html>
