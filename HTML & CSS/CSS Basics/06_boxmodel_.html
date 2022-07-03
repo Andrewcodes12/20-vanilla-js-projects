@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box model</title>
+
+        <!--
+        4 layers of the box model
+        the element/content : can put a height and width on
+        the padding: spacing inside the element/inside the border. moves the content
+        the border: border properties
+        the margin: spacing outside the element/outside the border . moves the content around the content
+    -->
+
+        <style>
+
+            /* CSS reset */
+            /* eliminate all default sizing */
+            /* set margin and padding for everything to 0 */
+            /* set box-sizing to border box to prevent the padding from
+            adding to the element width */
+            *{
+                margin: 0;
+                padding: 0;
+                /* prevents padding from adding to width of elements */
+                box-sizing: border-box;
+            }
+
+
+            .box{
+                background: #f4f4f4;
+                border: 2px solid #777;
+
+                /* default width is the length of the whole screen */
+                /* this will make it smaller */
+                width: 500px;
+
+                /* padding on all sides */
+                /* padding also increases the width of the element */
+                /* width = 500px + 20px of padding */
+                padding:20px;
+                /* add box sizing property to * to prevent that from happening */
+
+                /* padding per side */
+                /* will override the padding property */
+                /* padding-top:10px;
+                padding-right:20px;
+                padding-bottom:10px;
+                padding-left:20px; */
+
+                /* top right bottom left */
+                padding: 10px 20px 10px 20px;
+                /* top/bottom left/right */
+                padding: 10px 20px;
+
+                /* margin on all sides */
+                /* margin has the same order as padding */
+                margin:20px;
+
+                /* margin per side */
+                /* will override the margin property */
+                /* margin-top:10px;
+                margin-right:20px;
+                margin-bottom:10px;
+                margin-left:20px; */
+
+                /* top right bottom left */
+                margin: 10px 20px 10px 20px;
+                /* top/bottom left/right */
+                margin: 10px 20px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="box">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi est earum veritatis recusandae cum inventore laudantium consequatur architecto id.</p>
+        </div>
+        <div class="box">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi est earum veritatis recusandae cum inventore laudantium consequatur architecto id.</p>
+        </div>
+
+    </body>
+</html>
