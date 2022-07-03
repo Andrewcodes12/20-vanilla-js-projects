@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Backgrounds and border</title>
+
+        <!-- JPEG files cannot be transparent -->
+        <!-- PNG files can be transparent -->
+        <style>
+            #box-1{
+                background-color: #ffebcd;
+                /* border has 3 mandatory properties */
+                /* border-width: 3px;
+                border-color: red;
+                border-style: solid; */
+                border:3px solid red;
+                /* border-radius rounds corners */
+                border-radius: 10px;
+            }
+
+            #box-2{
+                background: #333;
+                color: #fff;
+                /* only border the top */
+                border-top: 3px solid blue;
+                /* only round the top left */
+                border-top-left-radius: 10px;
+                /* only round the top right */
+                border-top-right-radius:10px;
+            }
+
+            #box-3{
+                /* will give this div an image */
+                background-image:url('imageurl');
+                /* can set height and width to make div bigger to fit image */
+                height: 300px;
+                width: 600px;
+                /* stop the background from repeating */
+                background-repeat: no-repeat;
+                /* moves the image around on the x axis and y axis */
+                background-position: center center;
+                /* background-postion: center top; */
+                /* background-postion: center bottom; */
+                /* whole image shows and covers the whole div */
+                background-size: cover;
+            }
+
+            #box-4{
+                /*  same as background-image */
+                background: url('imageurl');
+                background-repeat: no-repeat;
+                background-position: center center;
+                /* image stays fixed to the browser window; doesnt move */
+                background-attachment: fixed;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div id="box-1">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis ipsa adipisci eius amet tenetur fugit laborum suscipit eum? Non.</p>
+        </div>
+        <br>
+        <div id="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis ipsa adipisci eius amet tenetur fugit laborum suscipit eum? Non.</p>
+        </div>
+        <div id="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis ipsa adipisci eius amet tenetur fugit laborum suscipit eum? Non.</p>
+        </div>
+        <div id="box-4">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis ipsa adipisci eius amet tenetur fugit laborum suscipit eum? Non.</p>
+        </div>
+
+
+
+
+    </body>
+</html>
