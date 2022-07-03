@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Float & align</title>
+
+        <!-- floats align items -->
+        <!-- floats is an old way of doing this -->
+        <!--  the convention is to use flex box/css grids to align items -->
+
+        <style>
+            /* need box sizing so padding doesnt add to the width of the container */
+            *{
+                box-sizing:border-box
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.4em;
+            }
+
+            /* how to center elements */
+            /* 1. create element
+            2. set margin to auto
+            auto will add the same amount of margin to both sides pushing it to the middle */
+            .container{
+                margin: 30px auto;
+                /* max-width is used to make your site responsive */
+                max-width: 960px;
+            }
+            
+            /* if you use floating you must clear */
+            .clr{
+                clear: both
+            }
+
+            .box{
+                background-color: #f4f4f4;
+                border: 1px solid #333;
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+
+
+            .box p{
+                /* align the text inside the divs */
+                /* by default its aligned to the left */
+                /* text-align: center; */
+                /* justify gives it even space around the paragraph */
+                text-align: justify
+            }
+
+            /* must use width when using float */
+            #box-2{
+                float: left;
+                /* width is 68% of the container which is 960px */
+                width: 68%
+            }
+
+            #box-3{
+                float: right;
+                /* width is 30% of the container which is 960px */
+                width:30%
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+    <div class="container">
+            <div id="box-1" class="box">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum atque similique explicabo recusandae suscipit tempore nam autem fugiat ducimus.</p>
+            </div>
+
+            <div id="box-2" class="box">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum atque similique explicabo recusandae suscipit tempore nam autem fugiat ducimus.</p>
+            </div>
+
+            <div id="box-3" class="box">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum atque similique explicabo recusandae suscipit tempore nam autem fugiat ducimus.</p>
+            </div>
+
+            <div class="clr"></div>
+
+            <div id="box-4" class="box">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum atque similique explicabo recusandae suscipit tempore nam autem fugiat ducimus.</p>
+            </div>
+    </div>
+
+
+
+    </body>
+</html>
