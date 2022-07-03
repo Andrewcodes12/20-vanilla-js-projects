@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display properties</title>
+
+        <!-- turn block level elements to inline -->
+        <!-- turn inline elements to block level -->
+        <style>
+
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* change block to inline so it displays horizontally */
+            li{
+                display: inline;
+            }
+
+            li a {
+                text-decoration: none;
+                padding-right: 20px;
+            }
+
+            /* turn inline element to block */
+            /* now the images are displayed on top of eachother instead of next */
+            /* margin auto only works on block elements */
+            img{
+                display: block;
+                margin: auto;
+            }
+
+            .box{
+                /* cannot use width on inline */
+                /* inline block will display the block elements inline */
+                display: inline-block;
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                width: 32.5%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- by default li are block level -->
+        <li><a href="#">tech</a></li>
+        <li><a href="#">business</a></li>
+        <li><a href="#">fashion</a></li>
+
+        <br>
+        <br>
+        <!-- images are side by side because they are inline -->
+        <img src="imageurl" alt="text image">
+        <img src="imageurl" alt="text image">
+
+        <br>
+        <br>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quae modi error adipisci aliquid voluptas nulla impedit soluta ipsam eius.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quae modi error adipisci aliquid voluptas nulla impedit soluta ipsam eius.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quae modi error adipisci aliquid voluptas nulla impedit soluta ipsam eius.</p>
+        </div>
+    </body>
+</html>
