@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <style>
+
+            /*
+            flex is a value for the display property
+            replaces floats and is much more elegant to work :focus-withinaligns
+            items both horizontally(row) and vertical(column)
+            flex items can be re-ordered via css
+            */
+
+            /*
+            display:flex ; creates a flex container
+            container has a main axis and a cross axis
+            x y axis
+            a start and an end
+
+            all direct child elements are flex items
+
+            display flex makes all the child elements line up horizontally like floats
+
+            flex-direction columns aligns the elements vertically
+            flex-direction by default is a row
+
+            flex-wrap: will move elements to another line as the screen gets smaller
+
+            flex-shrink: stops elements from moving when screen gets smaller
+            flex-grow: makes element grow as screen grows
+
+
+            justify-content: aligns along the main(horizontal) axis
+            align-items: align items along the cross(vertical) axis
+            align-content: align when a extra space in corss axis
+            */
+
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            .flex-container{
+                display: flex;
+                /* by default flex direction is a row */
+                /* flex-direction: row; */
+
+                /* flex-wrap: will move elements to another line as the screen gets smaller */
+                /* flex-wrap: wrap */
+            }
+
+            .item{
+                background: #f4f4f4;
+                border: #ccc solid 2px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                width: 200px;
+            }
+/*
+            .item-1{
+                flex-shrink: stops elements from moving when screen gets smaller
+                flex-shrink: 0;
+            }
+
+            .item-2{
+                /* flex-grow: makes element grow as screen grows */
+                /* flex-grow: 1;
+                flex-basis: 0
+            } */
+
+            /* .item-3{
+                flex-grow: 2;
+            }
+ */
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <div class="flex-container">
+            <div class="item item-1">
+                <h3>Item one</h3>
+            </div>
+            <div class="item item-2">
+                <h3>Item two</h3>
+            </div>
+            <div class="item item-3">
+                <h3>Item three</h3>
+            </div>
+
+        </div>
+
+
+
+    </body>
+</html>

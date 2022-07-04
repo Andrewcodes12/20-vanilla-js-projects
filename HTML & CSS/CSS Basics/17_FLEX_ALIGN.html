@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+        <style>
+
+            /*
+            flex is a value for the display property
+            replaces floats and is much more elegant to work :focus-withinaligns
+            items both horizontally(row) and vertical(column)
+            flex items can be re-ordered via css
+            */
+
+            /*
+            display:flex ; creates a flex container
+            container has a main axis and a cross axis
+            x y axis
+            a start and an end
+
+            align-items: put on the container not the align because its
+            suppose to effect every item
+
+            if flex-direction is row
+            align items center + height will align items in the center across the page
+
+
+            if flex-direction is column
+            align items center + height will align items in the center going down the page
+
+
+            justify content: aligns on the main axis
+
+
+            align-self: on individual element allows you to position that 1 element
+            */
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            .flex-container{
+                background-color: #f4f4f4;
+                display: flex;
+                flex-direction: row;
+                /* cross axis */
+                align-items: center;
+                /* main axis align */
+                justify-content: flex-end;
+                height: 50vh;
+            }
+
+            .item{
+                background: #f4f4f4;
+                border: #ccc solid 2px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+
+            }
+
+            .item-1{
+                align-self:flex-start;
+            }
+
+            .item-3{
+                align-self:flex-end;
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <div class="flex-container">
+            <div class="item item-1">
+                <h3>Item one</h3>
+            </div>
+            <div class="item item-2">
+                <h3>Item two</h3>
+            </div>
+            <div class="item item-3">
+                <h3>Item three</h3>
+            </div>
+
+        </div>
+
+
+
+    </body>
+</html>
