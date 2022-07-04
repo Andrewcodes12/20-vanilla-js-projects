@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>View height and view width</title>
+
+        <style>
+            /* viewport is the whole area inside the browser that displays content */
+            /* under the address and bookmarks bar */
+            /* 50vh takes up 50 of 100 viewport heights */
+            /* there will always be 100vh no matter the size of the browser */
+            /* there will always be 100vw no matter the size of the browser */
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+
+            header{
+                background: #333;
+                color: #fff;
+                height: 100vh;
+                /* height:100% does NOT work */
+                background: url('https://source.unsplash.com/daily')
+                no-repeat center center/cover;
+                text-align: center;
+                padding: 2rem;
+                padding-top: 15rem;
+            }
+
+            header h1{
+                font-size: 3rem;
+            }
+
+            header p{
+                margin: 1rem 0;
+            }
+
+            .btn{
+                display: inline-block;
+                text-decoration: none;
+                background: #f4f4f4;
+                color: #333;
+                padding: 0.75rem 2rem;
+            }
+
+            .btn:hover{
+                background-color: #921c1c;
+            }
+
+            section{
+                padding: 2rem;
+            }
+
+            @media(max-height: 450px){
+                header{
+                    padding-top:7rem;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to our website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi quo vero ab, placeat minima!</p>
+            <a href="#" class="btn">Find out more</a>
+        </header>
+
+        <section>
+            <h3>about our company</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestiae ullam quasi nemo quos ipsam.</p>
+        </section>
+
+    </body>
+</html>

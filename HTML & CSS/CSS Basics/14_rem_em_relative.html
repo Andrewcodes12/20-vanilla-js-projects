@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rem & Em</title>
+
+        <!--
+            Rem(root)
+        rem units are relative(multipliers) to its root html element
+        em units are relative(multipliers) to its parent container(element)
+
+        use REM over em
+        REM is good for browser accesibility
+        REM units automatically adjust to the users browsers font settings
+
+        use to make content dynamic
+    -->
+        <style>
+
+            html{
+                font-size: 10px;
+            }
+            /* rems are calculated off ^ html root size */
+            .box-2 h3{
+                /* 23px
+                10px * 2.3
+                */
+                font-size: 2.3rem;
+            }
+
+            .box-2 p{
+                /* 16px   10px * 1.6*/
+                font-size: 1.6rem;
+                /* 17px  10px * 1.7*/
+                line-height: 1.7rem;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <div class="box-1">
+            <h3>box one</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi amet quos blanditiis vero officia incidunt consequuntur ipsa itaque ea ad!</p>
+        </div> -->
+        <div class="box-2">
+            <h3>box two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi amet quos blanditiis vero officia incidunt consequuntur ipsa itaque ea ad!</p>
+        </div>
+    </body>
+</html>

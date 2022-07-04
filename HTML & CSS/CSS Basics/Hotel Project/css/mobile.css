@@ -1,0 +1,19 @@
+#navbar .logo{
+    float:none;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+    float:none;
+}
+
+
+#navbar li{
+    float:none;
+}
+
+#navbar li a{
+    padding: 5;
+    border-bottom: #444 dotted 1px;
+}
